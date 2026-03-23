@@ -6,7 +6,8 @@ library(dplyr)
 #  Load them into R as separate data frames.
 #  Inspect the first few rows to understand the columns.
 
-    setwd("/Users/renoguo/Documents/wine+quality")
+    #First, set working directory after downloading "data" file.
+    #setwd("/Users/renoguo/Documents/Projects/WineQualityTidying")
     red <- read.csv("winequality-red.csv", sep = ";", header = TRUE)
     white<-read.csv("winequality-white.csv", sep=";",header=TRUE)
 
