@@ -1,0 +1,40 @@
+# Wine Quality Mini-Project
+
+ Hello! :) Welcome to my mini-project, where I use the **Wine Quality dataset** ([UCI Repository](https://archive.ics.uci.edu/dataset/186/wine+quality)) to practice **data cleaning, transformation, and exploratory analysis** in R. I completed this as a personal practice project for the "Getting and Cleaning Data" JHU Coursera course.  
+
+## Here is a Brief Overview
+
+I came up with the following instructions, modeled off of the "Getting and Cleaning Data" Course project. My script, in the "script" folder does the following:
+
+- **Combine datasets**: red and white wine CSVs with a `Type` column  
+- **Clean & subset columns**: Fixed Acidity, pH, Alcohol, Quality  
+- **Label Quality**: Low / Medium / High  
+- **Summarize**:
+  - Average quality per wine type  
+  - Average alcohol per quality level  
+  - Average pH per type & quality  
+- **Visualize**: histograms and boxplots with reference lines  
+- **Export**: tidy CSVs (`TidyWineQuality.csv`, `TidyWineQualityByLevels.csv`)  
+
+## File Structure
+MiniProj-WineQuality/
+├─ data/ # raw CSVs
+├─ scripts/ # R analysis script
+├─ output/ # cleaned datasets
+README.md
+
+
+## How to Run
+1. Open `WineQuality.R` in R/RStudio  
+2. Set working directory to project folder  
+3. Run script → outputs saved to `output/`  
+
+## Packages Used
+
+- `dplyr`
+- Base R (`read.csv`, `hist`, `boxplot`) — import & visualization  
+
+## Notes
+
+- Numeric analysis focuses on columns representing mean/std-like measures  
+- Project workflow and prompts were refined with guidance from **ChatGPT**, helping structure tasks and summaries  
