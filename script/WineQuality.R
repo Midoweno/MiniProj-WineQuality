@@ -1,13 +1,11 @@
 #Wine-Quality Dataset Mini-Exercise
 library(dplyr)
 
-#Step 1:
+#Step 1: Set WD
 #  Download both CSV files.
 #  Load them into R as separate data frames.
 #  Inspect the first few rows to understand the columns.
 
-    #First, set working directory after downloading "data" file.
-    #setwd("/Users/renoguo/Documents/Projects/WineQualityTidying")
     red <- read.csv("winequality-red.csv", sep = ";", header = TRUE)
     white<-read.csv("winequality-white.csv", sep=";",header=TRUE)
 
@@ -53,12 +51,19 @@ library(dplyr)
   # Average pH per wine type and quality level
     
     quality_per_wine<-int%>%
+      group_by(Type)%>%
+      summarize(Avg_Q_Ptype=mean(Quality))
+    
+    alc_content_per_quality<-int%>%
       group_by(Quality)%>%
-      summarize(mean)
+      summarize(Avg_AlcCont_Per_Quality=mean(Alcohol))
     
-      
-
+    avg_pH_per_type_and_quality<-int%>%
+      group_by(Type,Quality)%>%
+      summarize(Avg_pH=mean(pH))
     
+#Writing resulting tidying data
     
-    
+write.csv(int,"TidyWineQuality.csv",row.names=FALSE)
+write.csv(play,"TidyWineQualityByLevels.csv",row.names=FALSE)
     
