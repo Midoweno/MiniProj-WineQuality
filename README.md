@@ -1,6 +1,6 @@
 # Wine Quality Mini-Project
 
- Hello! :) Welcome to my mini-project, where I use the **Wine Quality dataset** ([UCI Repository](https://archive.ics.uci.edu/dataset/186/wine+quality)) to practice **data cleaning, transformation, and exploratory analysis** in R. I completed this as a personal practice project for the "Getting and Cleaning Data" JHU Coursera course.  
+ Hello! :) Welcome to my mini-project, where I use the **Wine Quality dataset** ([UCI Repository](https://archive.ics.uci.edu/dataset/186/wine+quality)) to practice **data cleaning, transformation, and exploratory analysis** in R. In this project, I practiced skills I learned during the "Getting and Cleaning Data" JHU Coursera course.  
 
 ## Here is a Brief Overview
 
@@ -13,8 +13,7 @@ I came up with the following instructions, modeled off of the "Getting and Clean
   - Average quality per wine type  
   - Average alcohol per quality level  
   - Average pH per type & quality  
-- **Visualize**: histograms and boxplots with reference lines  
-- **Export**: tidy CSVs (`TidyWineQuality.csv`, `TidyWineQualityByLevels.csv`)  
+- **Export**: tidy CSVs (`TidyWineQuality.csv`, `TidyWineQualityByLevels.csv`)
 
 ## File Structure
 MiniProj-WineQuality/
