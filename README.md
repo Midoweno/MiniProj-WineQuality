@@ -25,15 +25,10 @@ README.md
 
 ## How to Run
 1. Open `WineQuality.R` in R/RStudio  
-2. Set working directory to project folder  
-3. Run script → outputs saved to `output/`  
+2. Set working directory to project "data" folder
+3. Run script → outputs written to working directory
 
 ## Packages Used
 
 - `dplyr`
 - Base R (`read.csv`, `hist`, `boxplot`) — import & visualization  
-
-## Notes
-
-- Numeric analysis focuses on columns representing mean/std-like measures  
-- Project workflow and prompts were refined with guidance from **ChatGPT**, helping structure tasks and summaries  
